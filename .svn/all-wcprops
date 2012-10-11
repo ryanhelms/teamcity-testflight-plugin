@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/teamcity/!svn/ver/3055/plugins/template-plugin/templateProject
+END
+templatePrj.ipr
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/templatePrj.ipr
+END
+teamcity-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/teamcity/!svn/ver/2857/plugins/template-plugin/templateProject/teamcity-common.xml
+END
+templateprj.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/templateprj.xml
+END
+templatePrj.iml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/templatePrj.iml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/build.properties
+END
+teamcity-plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/teamcity-plugin.xml
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/teamcity/!svn/ver/3055/plugins/template-plugin/templateProject/readme.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/teamcity/!svn/ver/2478/plugins/template-plugin/templateProject/build.xml
+END
