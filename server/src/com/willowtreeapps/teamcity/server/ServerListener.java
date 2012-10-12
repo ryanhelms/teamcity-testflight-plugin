@@ -98,9 +98,18 @@ public class ServerListener extends BuildServerAdapter
         BuildArtifact pom = artifacts.getArtifact(POM);
         BuildArtifact client = artifacts.getArtifact(CLIENT_IPA);
 
-        Map responseEntity = null;
+        if (client == null)
+        {
+            Loggers.SERVER.info("Nothing to upload (i.e. client.ipa doesn't exist)");
+            return;
+        }
+        else if (pom == null)
+        {
+            Loggers.SERVER.info("No pom.xml in project");
+            return;
+        }
 
-        boolean isReturning = false;
+        Map responseEntity = null;
 
         try
         {
@@ -114,13 +123,6 @@ public class ServerListener extends BuildServerAdapter
             request.lists = distroLists;
             request.notifyTeam = true;
             request.replace = true;
-
-            if (client == null)
-            {
-                Loggers.SERVER.info("Nothing to upload (i.e. client.ipa doesn't exist)");
-                isReturning = true;
-                return;
-            }
 
             request.file = this.extractFile(client);
             responseEntity = uploader.upload(request);
@@ -136,11 +138,8 @@ public class ServerListener extends BuildServerAdapter
         }
         finally
         {
-            if (!isReturning)
-            {
-                String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
-                this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
-            }
+            String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
+            this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
         }
     }
 
