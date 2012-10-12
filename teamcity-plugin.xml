@@ -2,8 +2,8 @@
 <teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:noNamespaceSchemaLocation="urn:shemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
-    <name>templatePrj</name>
-    <display-name>templatePrj</display-name>
+    <name>TeamCity TestFlight Upload Plugin</name>
+    <display-name>TestFlight</display-name>
     <version>@version@</version>
   </info>
   <deployment use-separate-classloader="false"/>

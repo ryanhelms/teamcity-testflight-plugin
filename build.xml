@@ -1,18 +1,18 @@
-<project name="templatePrj-custom-build" default="dist" basedir=".">
+<project name="teamcity-testflight-custom-build" default="dist" basedir=".">
 
   <property file="build.properties"/>
-  <property name="plugin.name" value="templatePrj"/>
+  <property name="plugin.name" value="teamcity-testflight"/>
   <property name="javac2.home" value="${basedir}/lib-compile"/>
 
   <import file="teamcity-common.xml"/>
-  <import file="templateprj.xml"/>
+  <import file="teamcity-testflight.xml"/>
 
   <target name="package" depends="define.version">
     <package.teamcity.plugin name="${plugin.name}"
-                             common.output="${templateprj-common.output.dir}"
-                             server.output="${templateprj-server.output.dir}"
-                             agent.output="${templateprj-agent.output.dir}"
-                             server.lib.dir="lib" server.lib.includes="*.jar"
+                             common.output="${teamcity-testflight-common.output.dir}"
+                             server.output="${teamcity-testflight-server.output.dir}"
+                             agent.output="${teamcity-testflight-agent.output.dir}"
+                             server.lib.dir="${basedir}/server/lib" server.lib.includes="*.jar"
                              plugin.descriptor.file="${basedir}/teamcity-plugin.xml"
                              plugin.version="${plugin.version}"/>
   </target>
@@ -30,7 +30,7 @@
 
   <target name="dist" depends="check.teamcitydistribution,all,package"/>
 
-  <target name="clean" depends="templateprj.clean"/>
+  <target name="clean" depends="teamcity-testflight.clean"/>
 
   <target name="deploy" depends="dist">
     <deploy.teamcity.plugin name="${plugin.name}"/>

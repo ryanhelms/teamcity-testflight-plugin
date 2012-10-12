@@ -9,7 +9,6 @@
                            http://www.springframework.org/schema/lang/spring-lang-2.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="constructor">
 
-  <bean id="testFlightController" class="com.willowtreeapps.teamcity.server.Controller"/>
-  <bean id="testFlightListener" class="com.willowtreeapps.teamcity.server.ServerListener"/>
+  <bean id="testFlightAgentListener" class="testflight.agent.AgentListener"/>
 
 </beans>
