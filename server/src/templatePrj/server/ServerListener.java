@@ -21,27 +21,31 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.*;
+import java.util.Map;
 
 /**
- * Example server events listener
+ * Created by IntelliJ IDEA.
+ * User: jbeck
+ * Date: 10/11/12
+ * Time: 4:03 PM
  */
 public class ServerListener extends BuildServerAdapter {
 
   private static final String POM = "pom.xml";
 
-    private static final String API_TOKEN = "testflight.api.token";
+  private static final String API_TOKEN = "testflight.api.token";
 
-    private static final String TEAM_TOKEN = "testflight.team.token";
+  private static final String TEAM_TOKEN = "testflight.team.token";
 
-    private static final String DISTRIBUTION = "testflight.distribution";
+  private static final String DISTRIBUTION = "testflight.distribution";
 
-    private static final String CLIENT = "client.ipa";
+  private static final String CLIENT = "client.ipa";
 
-    private String apiToken;
+  private String apiToken;
 
-    private String teamToken;
+  private String teamToken;
 
-    private String distoLists;
+  private String distroLists;
 
   private SBuildServer myServer;
 
@@ -71,13 +75,17 @@ public class ServerListener extends BuildServerAdapter {
           request.apiToken = this.apiToken;
           request.teamToken = this.teamToken;
           request.buildNotes = comment;
-          request.lists = distoLists;
+          request.lists = distroLists;
           request.notifyTeam = true;
           request.replace = true;
 
           request.file = this.extractFile(client);
 
-          uploader.upload(request);
+          Map responseEntity = uploader.upload(request);
+          for (Object key : responseEntity.keySet())
+          {
+              Loggers.SERVER.info(key.toString() + ":" + responseEntity.get(key).toString());
+          }
 
           if (request.file.delete())
           {
@@ -133,7 +141,7 @@ public class ServerListener extends BuildServerAdapter {
               }
               else if (isDistro)
               {
-                  distoLists = new String(ch).substring(start, start + length);
+                  distroLists = new String(ch).substring(start, start + length);
                   isDistro = false;
               }
           }

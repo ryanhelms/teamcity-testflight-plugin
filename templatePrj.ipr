@@ -288,6 +288,31 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="TeamCity">
+      <CLASSES>
+        <root url="jar://$TeamCityDistribution$/lib/ecj-3.7.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-i18n-ja.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-jdbc.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-util.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-coyote.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-dbcp.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-i18n-es.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-i18n-fr.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/jasper.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/jsp-api.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/servlet-api.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/tomcat-api.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/annotations-api.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/catalina-ant.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/el-api.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/catalina-ha.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/catalina-tribes.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/jasper-el.jar!/" />
+        <root url="jar://$TeamCityDistribution$/lib/catalina.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="TeamCity Open API agent">
       <CLASSES>
         <root url="jar://$TeamCityDistribution$/devPackage/agent-api.jar!/" />
@@ -335,6 +360,20 @@
     <library name="TeamCity Third-Party server">
       <CLASSES>
         <root url="jar://$TeamCityDistribution$/webapps/ROOT/WEB-INF/lib/spring-webmvc.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Third Party">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/server/lib/json-simple-1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/httpcore-4.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/commons-logging-1.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/commons-codec-1.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/httpclient-4.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/fluent-hc-4.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/httpclient-cache-4.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/server/lib/httpcomponents-client-4.2.1/httpmime-4.2.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

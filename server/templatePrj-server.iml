@@ -23,8 +23,8 @@
     <orderEntry type="library" name="TeamCity Third-Party common" level="project" />
     <orderEntry type="library" name="TeamCity Third-Party server" level="project" />
     <orderEntry type="module" module-name="templatePrj-common" />
-    <orderEntry type="library" name="HTTP Components" level="project" />
-    <orderEntry type="library" name="JSON Simple" level="project" />
+    <orderEntry type="library" name="TeamCity" level="project" />
+    <orderEntry type="library" name="Third Party" level="project" />
   </component>
 </module>
 

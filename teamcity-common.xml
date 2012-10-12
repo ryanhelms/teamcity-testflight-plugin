@@ -28,7 +28,7 @@
     <attribute name="out.unpacked" default="@{out}/unpacked"
                description="name of the directory to store unpacked plugin (not packed into zip)"/>
 
-    <attribute name="server.lib.dir" default="" description="directory to get libs for the server part"/>
+    <attribute name="server.lib.dir" default="lib" description="directory to get libs for the server part"/>
     <attribute name="server.lib.includes" default="none should match" description="includes pattern of the files in the directory"/>
     <attribute name="plugin.version" default="SNAPSHOT"
                description="the version of the plugin to put into teamcity-plugin.xml instead of '@Plugin_Version@'"/>

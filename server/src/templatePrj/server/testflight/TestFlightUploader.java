@@ -1,5 +1,6 @@
 package templatePrj.server.testflight;
 
+import jetbrains.buildServer.log.Loggers;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
@@ -49,10 +50,14 @@ public class TestFlightUploader implements Serializable
         DefaultHttpClient httpClient = new DefaultHttpClient();
 
         // Configure the proxy if necessary
-        if(ur.proxyHost!=null && !ur.proxyHost.isEmpty() && ur.proxyPort>0) {
+        if(ur.proxyHost!=null && !ur.proxyHost.isEmpty() && ur.proxyPort>0)
+        {
             Credentials cred = null;
+
             if(ur.proxyUser!=null && !ur.proxyUser.isEmpty())
+            {
                 cred = new UsernamePasswordCredentials(ur.proxyUser, ur.proxyPass);
+            }
 
             httpClient.getCredentialsProvider().setCredentials(new AuthScope(ur.proxyHost, ur.proxyPort),cred);
             HttpHost proxy = new HttpHost(ur.proxyHost, ur.proxyPort);
@@ -69,13 +74,17 @@ public class TestFlightUploader implements Serializable
         entity.addPart("notes", new StringBody(ur.buildNotes));
         entity.addPart("file", fileBody);
 
-        if (ur.dsymFile != null) {
+        if (ur.dsymFile != null)
+        {
             FileBody dsymFileBody = new FileBody(ur.dsymFile);
             entity.addPart("dsym", dsymFileBody);
         }
 
         if (ur.lists.length() > 0)
+        {
             entity.addPart("distribution_lists", new StringBody(ur.lists));
+        }
+
         entity.addPart("notify", new StringBody(ur.notifyTeam ? "True" : "False"));
         entity.addPart("replace", new StringBody(ur.replace ? "True" : "False"));
         httpPost.setEntity(entity);
@@ -85,11 +94,16 @@ public class TestFlightUploader implements Serializable
 
         InputStream is = resEntity.getContent();
 
-        // Improved error handling.
         int statusCode = response.getStatusLine().getStatusCode();
-        if (statusCode != 200) {
+
+        if (statusCode != 200)
+        {
             String responseBody = new Scanner(is).useDelimiter("\\A").next();
             throw new UploadException(statusCode, responseBody, response);
+        }
+        else
+        {
+            Loggers.SERVER.info("'" + ur.file.getName() + "' successfully uploaded to TestFlight");
         }
 
         JSONParser parser = new JSONParser();
