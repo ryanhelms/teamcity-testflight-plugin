@@ -62,7 +62,7 @@
       <file leaf-file-name="ServerListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="93" selection-start="5957" selection-end="5957" vertical-scroll-proportion="0.35714287">
+            <state line="152" column="62" selection-start="5043" selection-end="5043" vertical-scroll-proportion="1.7857143">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -716,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="93" selection-start="5957" selection-end="5957" vertical-scroll-proportion="0.35714287">
+        <state line="152" column="62" selection-start="5043" selection-end="5043" vertical-scroll-proportion="1.7857143">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

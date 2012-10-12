@@ -54,6 +54,8 @@ public class ServerListener extends BuildServerAdapter
 
     private static final String POM = "pom.xml";
 
+    private static final String ADMIN_EMAIL = "admin@willowtreeapps.com";
+
     private static final String API_TOKEN = "testflight.api.token";
 
     private static final String TEAM_TOKEN = "testflight.team.token";
@@ -98,6 +100,8 @@ public class ServerListener extends BuildServerAdapter
 
         Map responseEntity = null;
 
+        boolean isReturning = false;
+
         try
         {
             this.processPom(pom);
@@ -114,6 +118,7 @@ public class ServerListener extends BuildServerAdapter
             if (client == null)
             {
                 Loggers.SERVER.info("Nothing to upload (i.e. client.ipa doesn't exist)");
+                isReturning = true;
                 return;
             }
 
@@ -131,9 +136,11 @@ public class ServerListener extends BuildServerAdapter
         }
         finally
         {
-            String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
-
-            this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
+            if (!isReturning)
+            {
+                String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
+                this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
+            }
         }
     }
 
@@ -144,7 +151,7 @@ public class ServerListener extends BuildServerAdapter
         builder.append("\nUser Comment:\n");
         builder.append(comment);
 
-        this.notifyPinner(user, "notice@willowtreeapps.com", "You unpinned build: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'", builder.toString());
+        this.notifyPinner(user, ADMIN_EMAIL, "You unpinned build: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'", builder.toString());
     }
 
     private String processResponseEntity(Map responseEntity)
