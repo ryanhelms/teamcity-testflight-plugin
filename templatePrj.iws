@@ -62,8 +62,10 @@
       <file leaf-file-name="ServerListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/templatePrj/server/ServerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="50" selection-start="2763" selection-end="2763" vertical-scroll-proportion="1.1952192">
-              <folding />
+            <state line="89" column="99" selection-start="2994" selection-end="2994" vertical-scroll-proportion="-0.53478855">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,7 +118,7 @@
       <file leaf-file-name="templateprj.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templateprj.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="49" selection-start="11910" selection-end="11910" vertical-scroll-proportion="0.0">
+            <state line="273" column="74" selection-start="11922" selection-end="11922" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,10 +152,10 @@
         <option value="$PROJECT_DIR$/server/src/templatePrj/server/IPABuildArtifactsProcessor.java" />
         <option value="$PROJECT_DIR$/server/src/templatePrj/server/testflight/UploadException.java" />
         <option value="$PROJECT_DIR$/server/src/templatePrj/server/testflight/UploadRequest.java" />
-        <option value="$PROJECT_DIR$/templateprj.xml" />
         <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/teamcity-common.xml" />
         <option value="$PROJECT_DIR$/server/src/templatePrj/server/testflight/TestFlightUploader.java" />
+        <option value="$PROJECT_DIR$/templateprj.xml" />
         <option value="$PROJECT_DIR$/server/src/templatePrj/server/ServerListener.java" />
       </list>
     </option>
@@ -319,6 +321,20 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatePrj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="httpcomponents-client-4.2.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -460,7 +476,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20630679" sideWeight="0.6777547" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20621318" sideWeight="0.8319149" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -622,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templateprj.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="49" selection-start="11910" selection-end="11910" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="51" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
@@ -650,10 +659,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templateprj.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="74" selection-start="11922" selection-end="11922" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/templatePrj/server/ServerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="50" selection-start="2763" selection-end="2763" vertical-scroll-proportion="1.1952192">
-          <folding />
+        <state line="89" column="99" selection-start="2994" selection-end="2994" vertical-scroll-proportion="-0.53478855">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

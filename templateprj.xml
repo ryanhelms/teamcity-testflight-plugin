@@ -271,6 +271,7 @@
       <pathelement location="${basedir}/server/lib/httpcomponents-client-4.2.1/httpcore-4.2.1.jar"/>
       <pathelement location="${basedir}/server/lib/httpcomponents-client-4.2.1/httpmime-4.2.1.jar"/>
       <pathelement location="${basedir}/server/lib/json-simple-1.1.1/json-simple-1.1.1.jar"/>
+      <pathelement location="${basedir}/server/lib/javamail-1.4.5/mail.jar"/>
   </path>
   
   <path id="templateprj-server.module.classpath">
