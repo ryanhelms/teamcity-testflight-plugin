@@ -16,6 +16,8 @@
 
 package com.willowtreeapps.teamcity.server;
 
+import com.willowtreeapps.teamcity.Constants;
+import com.willowtreeapps.teamcity.PomHandler;
 import com.willowtreeapps.teamcity.testflight.TestFlightUploader;
 import jetbrains.buildServer.log.Loggers;
 import jetbrains.buildServer.serverSide.BuildServerAdapter;
@@ -30,7 +32,6 @@ import jetbrains.buildServer.util.EventDispatcher;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.xml.sax.*;
-import org.xml.sax.helpers.DefaultHandler;
 import com.willowtreeapps.teamcity.common.Util;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -51,37 +52,19 @@ import javax.mail.internet.*;
  */
 public class ServerListener extends BuildServerAdapter
 {
-
-    private static final String POM = "pom.xml";
-
-    private static final String ADMIN_EMAIL = "admin@willowtreeapps.com";
-
-    private static final String API_TOKEN = "testflight.api.token";
-
-    private static final String TEAM_TOKEN = "testflight.team.token";
-
-    private static final String DISTRIBUTION = "testflight.distribution";
-
-    private static final String CLIENT = "client";
-
-    private static final String CLIENT_IPA = CLIENT + ".ipa";
-
-    private static final String PROFILE = "profile";
-
-    private static final String ID = "id";
-
-    private String apiToken;
-
-    private String teamToken;
-
-    private String distroLists;
-
     private SBuildServer myServer;
+
+    private PomHandler pomHandler;
+
+    private BuildArtifact pom;
+
+    private BuildArtifact client;
 
     public ServerListener(@NotNull final EventDispatcher<BuildServerListener> dispatcher, SBuildServer server)
     {
         dispatcher.addListener(this);
         myServer = server;
+        pomHandler = new PomHandler();
     }
 
     @Override
@@ -95,17 +78,11 @@ public class ServerListener extends BuildServerAdapter
     {
         BuildArtifacts artifacts = build.getArtifacts(BuildArtifactsViewMode.VIEW_ALL);
 
-        BuildArtifact pom = artifacts.getArtifact(POM);
-        BuildArtifact client = artifacts.getArtifact(CLIENT_IPA);
+        pom = artifacts.getArtifact(Constants.POM);
+        client = artifacts.getArtifact(Constants.CLIENT_IPA);
 
-        if (client == null)
+        if (!checkArtifacts())
         {
-            Loggers.SERVER.info("Nothing to upload (i.e. client.ipa doesn't exist)");
-            return;
-        }
-        else if (pom == null)
-        {
-            Loggers.SERVER.info("No pom.xml in project");
             return;
         }
 
@@ -117,10 +94,10 @@ public class ServerListener extends BuildServerAdapter
 
             TestFlightUploader uploader = new TestFlightUploader();
             TestFlightUploader.UploadRequest request = new TestFlightUploader.UploadRequest();
-            request.apiToken = this.apiToken;
-            request.teamToken = this.teamToken;
+            request.apiToken = pomHandler.getApiToken();
+            request.teamToken = pomHandler.getTeamToken();
             request.buildNotes = comment;
-            request.lists = distroLists;
+            request.lists = pomHandler.getDistroLists();
             request.notifyTeam = true;
             request.replace = true;
 
@@ -138,19 +115,25 @@ public class ServerListener extends BuildServerAdapter
         }
         finally
         {
-            String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
-            this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
+            if (user != null)
+            {
+                String subject = "TestFlight upload results: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'";
+                this.notifyPinner(user, null, subject, this.processResponseEntity(responseEntity));
+            }
         }
     }
 
     @Override
     public void buildUnpinned(final @NotNull SBuild build, final @Nullable User user, final @Nullable String comment)
     {
-        StringBuilder builder = new StringBuilder("Notifying you (and everyone else) that you unpinned a build");
-        builder.append("\nUser Comment:\n");
-        builder.append(comment);
+        if (user != null)
+        {
+            StringBuilder builder = new StringBuilder("Notifying you (and everyone else) that you unpinned a build");
+            builder.append("\nUser Comment:\n");
+            builder.append(comment);
 
-        this.notifyPinner(user, ADMIN_EMAIL, "You unpinned build: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'", builder.toString());
+            this.notifyPinner(user, Constants.ADMIN_EMAIL, "You unpinned build: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'", builder.toString());
+        }
     }
 
     private String processResponseEntity(Map responseEntity)
@@ -177,17 +160,17 @@ public class ServerListener extends BuildServerAdapter
         return builder.toString();
     }
 
-    private void notifyPinner(User user, @Nullable String cc, String subject, String content)
+    private void notifyPinner(@NotNull User user, @Nullable String cc, @NotNull String subject, @NotNull String content)
     {
         Properties props = System.getProperties();
-        props.setProperty("mail.smtp.host", "localhost");
+        props.setProperty(Constants.SMTP_SERVER_KEY, Constants.SMTP_SERVER_VALUE);
 
         Session session = Session.getDefaultInstance(props);
 
         try
         {
             MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("ci@willowtreeapps.com"));
+            message.setFrom(new InternetAddress(Constants.FROM_ADDRESS));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(user.getEmail()));
             if (cc != null) {
                 message.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
@@ -210,76 +193,12 @@ public class ServerListener extends BuildServerAdapter
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
 
-        parser.parse(inputStream, new DefaultHandler()
-        {
-            boolean isProfileId = false;
-            boolean isClientProfile = false;
-            boolean isApiToken = false;
-            boolean isTeamToken = false;
-            boolean isDistro = false;
-
-            public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException
-            {
-                if (qName.equals(ID))
-                {
-                    isProfileId = true;
-                }
-                else if (qName.equals(API_TOKEN) && isClientProfile)
-                {
-                    isApiToken = true;
-                }
-                else if (qName.equals(TEAM_TOKEN) && isClientProfile)
-                {
-                    isTeamToken = true;
-                }
-                else if (qName.equals(DISTRIBUTION) && isClientProfile)
-                {
-                    isDistro = true;
-                }
-            }
-
-            public void characters(char ch[], int start, int length) throws SAXException
-            {
-                if (isProfileId)
-                {
-                    String profileName = new String(ch).substring(start, start + length);
-
-                    if (profileName.equalsIgnoreCase(CLIENT))
-                    {
-                        isClientProfile = true;
-                    }
-                    isProfileId = false;
-                }
-                else if (isApiToken && isClientProfile)
-                {
-                    apiToken = new String(ch).substring(start, start + length);
-                    isApiToken = false;
-                }
-                else if (isTeamToken && isClientProfile)
-                {
-                    teamToken = new String(ch).substring(start, start + length);
-                    isTeamToken = false;
-                }
-                else if (isDistro && isClientProfile)
-                {
-                    distroLists = new String(ch).substring(start, start + length);
-                    isDistro = false;
-                }
-            }
-
-            public void endElement(String uri, String localName, String qName) throws SAXException
-            {
-                if (qName.equals(PROFILE))
-                {
-                    isClientProfile = false;
-                }
-            }
-        });
+        parser.parse(inputStream, pomHandler);
     }
 
     private File extractFile(BuildArtifact artifact) throws IOException
     {
-        File file = File.createTempFile("client", ".ipa");
+        File file = File.createTempFile(Constants.CLIENT, "." + Constants.EXTENSION);
 
         InputStream in = artifact.getInputStream();
         OutputStream out = new FileOutputStream(file);
@@ -296,5 +215,24 @@ public class ServerListener extends BuildServerAdapter
         out.close();
 
         return file;
+    }
+
+    private boolean checkArtifacts()
+    {
+        boolean pass = true;
+
+        if (client == null)
+        {
+            Loggers.SERVER.info("Nothing to upload (i.e. client.ipa doesn't exist)");
+            pass = false;
+        }
+
+        if (pom == null)
+        {
+            Loggers.SERVER.info("No pom.xml in project");
+            pass = false;
+        }
+
+        return pass;
     }
 }

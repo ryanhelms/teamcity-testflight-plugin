@@ -45,8 +45,6 @@ public class TestFlightUploader implements Serializable
 {
     public static class UploadRequest implements Serializable
     {
-        public String filePath;
-        public String dsymPath;
         public String apiToken;
         public String teamToken;
         public Boolean notifyTeam;

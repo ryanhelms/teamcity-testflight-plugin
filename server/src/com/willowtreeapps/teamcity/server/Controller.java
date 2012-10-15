@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import jetbrains.buildServer.controllers.BaseController;
 import jetbrains.buildServer.web.openapi.PluginDescriptor;
 import jetbrains.buildServer.web.openapi.WebControllerManager;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.web.servlet.ModelAndView;
 import com.willowtreeapps.teamcity.common.Util;
 
@@ -38,9 +39,9 @@ public class Controller extends BaseController {
   }
 
   @Override
-  protected ModelAndView doHandle(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+  protected ModelAndView doHandle(final @NotNull HttpServletRequest request, final @NotNull HttpServletResponse response) throws Exception {
     ModelAndView view = new ModelAndView(myPluginDescriptor.getPluginResourcesPath("testflight-teamcity-server.jsp"));
-    final Map model = view.getModel();
+    final Map<String, Object> model = view.getModel();
     model.put("name", Util.NAME);
     return view;
   }

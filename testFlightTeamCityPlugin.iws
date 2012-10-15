@@ -62,10 +62,30 @@
       <file leaf-file-name="ServerListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="54" selection-start="3523" selection-end="3523" vertical-scroll-proportion="2.2142856">
+            <state line="134" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="1.3141994">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PomHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="53" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,8 +120,28 @@
       <file leaf-file-name="TestFlightUploader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="3084" selection-end="3084" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="47" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="13" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,22 +161,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/src/com.willowtreeapps.teamcity/server/TestFlightUploader.java" />
-        <option value="$PROJECT_DIR$/server/src/com.willowtreeapps.teamcity/testflight/TestFlightUploader.java" />
-        <option value="$PROJECT_DIR$/server/src/com.willowtreeapps.teamcity/server/ServerListener.java" />
         <option value="$PROJECT_DIR$/templatePrj.xml" />
         <option value="$PROJECT_DIR$/common/src/templatePrj/common/Util.java" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/common/src/com/willowtreeapps/teamcity/common/Util.java" />
         <option value="$PROJECT_DIR$/agent/src/com/willowtreeapps/teamcity/agent/AgentListener.java" />
-        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java" />
         <option value="$PROJECT_DIR$/teamcity-plugin.xml" />
         <option value="$PROJECT_DIR$/agent/src/META-INF/build-agent-plugin-testflight.xml" />
-        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java" />
         <option value="$PROJECT_DIR$/server/src/META-INF/build-server-plugin-templatePrj.xml" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/teamcity-testflight.xml" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/Constants.java" />
         <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java" />
       </list>
     </option>
   </component>
@@ -171,16 +211,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatePrj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,6 +240,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testFlightTeamCityPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamcity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,6 +414,16 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatePrj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,8 +440,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -503,18 +561,18 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20621318" sideWeight="0.71489364" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15318693" sideWeight="0.77021277" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2851064" sideWeight="0.06849315" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22978723" sideWeight="0.06849315" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20299946" sideWeight="0.71489364" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20299946" sideWeight="0.77021277" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -601,122 +659,106 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teamcity-common.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="72" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/resources/buildServerResources/testflight-teamcity-server.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.26603">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agent/src/META-INF/build-agent-plugin-testflight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-8.863636">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-8.863636" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/META-INF/build-server-plugin-templatePrj.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="53" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.3008596">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="53" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.3008596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="53" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="53" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/com/willowtreeapps/teamcity/common/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="638" selection-end="638" vertical-scroll-proportion="0.03984064">
+        <state line="16" column="36" selection-start="638" selection-end="638" vertical-scroll-proportion="0.03984064" />
+      </provider>
+    </entry>
+    <entry file="jar://$TeamCityDistribution$/devPackage/src/openApi-source.jar!/jetbrains/buildServer/serverSide/artifacts/BuildArtifacts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="16" selection-start="586" selection-end="586" vertical-scroll-proportion="0.33226323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/src/com/willowtreeapps/teamcity/agent/AgentListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.5365474" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamcity-plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamcity-testflight.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="57" selection-start="12404" selection-end="12404" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="89" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/lang/RuntimeException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.08438819">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="93" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
+        <state line="31" column="13" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamcity-plugin.xml">
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+        <state line="27" column="47" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="89" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$TeamCityDistribution$/devPackage/src/openApi-source.jar!/jetbrains/buildServer/serverSide/artifacts/BuildArtifacts.java">
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="586" selection-end="586" vertical-scroll-proportion="0.33226323">
-          <folding />
+        <state line="108" column="53" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="3084" selection-end="3084" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/src/com/willowtreeapps/teamcity/agent/AgentListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.5365474">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teamcity-testflight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="57" selection-start="12404" selection-end="12404" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="54" selection-start="3523" selection-end="3523" vertical-scroll-proportion="2.2142856">
+        <state line="134" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="1.3141994">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
