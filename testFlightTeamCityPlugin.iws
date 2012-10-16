@@ -59,68 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServerListener.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="1.3141994">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PomHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="53" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teamcity-plugin.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teamcity-plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teamcity-testflight.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teamcity-testflight.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="276" column="57" selection-start="12404" selection-end="12404" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="89" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestFlightUploader.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestFlightUploader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+            <state line="113" column="65" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.78417265">
               <folding />
             </state>
           </provider>
@@ -135,13 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java">
+      <file leaf-file-name="ServerListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="13" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="113" column="69" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="70" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templatePrj.xml" />
         <option value="$PROJECT_DIR$/common/src/templatePrj/common/Util.java" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/common/src/com/willowtreeapps/teamcity/common/Util.java" />
@@ -172,11 +120,12 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/teamcity-testflight.xml" />
         <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/Constants.java" />
-        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java" />
         <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java" />
         <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java" />
-        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java" />
         <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/UploadException.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java" />
+        <option value="$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java" />
       </list>
     </option>
   </component>
@@ -210,7 +159,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,115 +254,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buildServerResources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testFlightTeamCityPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -440,8 +283,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -659,14 +502,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/agent/src/META-INF/build-agent-plugin-testflight.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-8.863636" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/META-INF/build-server-plugin-templatePrj.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
@@ -695,34 +530,54 @@
         <state line="23" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.5365474" />
       </provider>
     </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/lang/RuntimeException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.08438819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="53" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/teamcity-plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" />
+        <state line="10" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.21582733" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teamcity-testflight.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="57" selection-start="12404" selection-end="12404" vertical-scroll-proportion="0.0" />
+        <state line="276" column="57" selection-start="12404" selection-end="12404" vertical-scroll-proportion="0.021994134" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="89" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/lang/RuntimeException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.08438819">
-          <folding />
-        </state>
+        <state line="14" column="89" selection-start="772" selection-end="772" vertical-scroll-proportion="0.30215827" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="31" column="13" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.36690646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="70" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/lang/Throwable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="787" selection-end="787" vertical-scroll-proportion="0.3323741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="69" selection-start="3780" selection-end="3780" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -733,35 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/PomHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="53" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/testflight/TestFlightUploader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+        <state line="113" column="65" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.78417265">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/com/willowtreeapps/teamcity/server/ServerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="1.3141994">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

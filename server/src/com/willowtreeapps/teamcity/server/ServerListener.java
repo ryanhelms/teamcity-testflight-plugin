@@ -111,7 +111,7 @@ public class ServerListener extends BuildServerAdapter
         }
         catch (Exception e)
         {
-            Loggers.SERVER.error("Error processing POM", e);
+            Loggers.SERVER.error("Error processing POM: " + e.getMessage(), e);
         }
         finally
         {
