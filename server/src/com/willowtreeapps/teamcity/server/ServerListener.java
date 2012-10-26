@@ -79,7 +79,7 @@ public class ServerListener extends BuildServerAdapter
         BuildArtifacts artifacts = build.getArtifacts(BuildArtifactsViewMode.VIEW_ALL);
 
         pom = artifacts.getArtifact(Constants.POM);
-        client = artifacts.getArtifact(Constants.CLIENT_IPA);
+        client = artifacts.getArtifact(getArtifactPath(artifacts.getRootArtifact()));
 
         if (!checkArtifacts())
         {
@@ -134,6 +134,27 @@ public class ServerListener extends BuildServerAdapter
 
             this.notifyPinner(user, Constants.ADMIN_EMAIL, "You unpinned build: '" + build.getFullName() + "', '" + build.getBuildNumber() + "'", builder.toString());
         }
+    }
+
+    private String getArtifactPath(BuildArtifact rootArtifact)
+    {
+        Collection<BuildArtifact> children = rootArtifact.getChildren();
+        String path = null;
+
+        for (BuildArtifact artifact : children)
+        {
+            if (artifact.isDirectory())
+            {
+                path = getArtifactPath(artifact);
+            }
+
+            if (artifact.getRelativePath().endsWith(Constants.CLIENT + "." + Constants.EXTENSION))
+            {
+                path = artifact.getRelativePath();
+            }
+        }
+
+        return path;
     }
 
     private String processResponseEntity(Map responseEntity)
