@@ -1,3 +1,5 @@
+package com.willowtreeapps.testflight;
+
 /*
  * Copyright 2000-2012 JetBrains s.r.o.
  *
@@ -14,9 +16,6 @@
  * limitations under the License.
  */
 
-package com.willowtreeapps.teamcity.testflight;
-
-import jetbrains.buildServer.log.Loggers;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
@@ -117,7 +116,7 @@ public class TestFlightUploader implements Serializable
         }
         else
         {
-            Loggers.SERVER.info("'" + ur.file.getName() + "' successfully uploaded to TestFlight");
+            System.out.println("'" + ur.file.getName() + "' successfully uploaded to TestFlight");
         }
 
         JSONParser parser = new JSONParser();

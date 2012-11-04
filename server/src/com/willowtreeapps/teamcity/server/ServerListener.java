@@ -18,7 +18,7 @@ package com.willowtreeapps.teamcity.server;
 
 import com.willowtreeapps.teamcity.Constants;
 import com.willowtreeapps.teamcity.PomHandler;
-import com.willowtreeapps.teamcity.testflight.TestFlightUploader;
+import com.willowtreeapps.testflight.TestFlightUploader;
 import jetbrains.buildServer.log.Loggers;
 import jetbrains.buildServer.serverSide.BuildServerAdapter;
 import jetbrains.buildServer.serverSide.BuildServerListener;

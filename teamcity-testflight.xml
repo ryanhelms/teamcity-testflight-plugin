@@ -272,6 +272,7 @@
       <pathelement location="${basedir}/server/lib/httpmime-4.2.1.jar"/>
       <pathelement location="${basedir}/server/lib/json-simple-1.1.1.jar"/>
       <pathelement location="${basedir}/server/lib/mail.jar"/>
+      <pathelement location="${basedir}/server/lib/testflight-api-1.0.0-SNAPSHOT.jar"/>
   </path>
 
   <path id="teamcity-testflight-server.module.classpath">

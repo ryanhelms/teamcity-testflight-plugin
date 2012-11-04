@@ -1,3 +1,5 @@
+package com.willowtreeapps.testflight;
+
 /*
  * Copyright 2000-2012 JetBrains s.r.o.
  *
@@ -13,8 +15,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package com.willowtreeapps.teamcity.testflight;
 
 import org.apache.http.HttpResponse;
 
