@@ -161,7 +161,11 @@
       <entry name="?*.jsp" />
       <entry name="?*.js" />
     </wildcardResourcePatterns>
-    <annotationProcessing enabled="false" useClasspath="true" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
   </component>
   <component name="CopyrightManager" default="">
     <copyright>
@@ -370,12 +374,26 @@
       </item>
     </group>
   </component>
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <XML>
+          <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+        </XML>
+        <codeStyleSettings language="SQL">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="8" />
+            <option name="TAB_SIZE" value="4" />
+          </indentOptions>
+        </codeStyleSettings>
+      </value>
+    </option>
+  </component>
   <component name="ProjectDetails">
     <option name="projectName" value="templatePrj" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/testflight-api/testflight-api.iml" filepath="$PROJECT_DIR$/testflight-api/testflight-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agent/testflight-teamcity-agent.iml" filepath="$PROJECT_DIR$/agent/testflight-teamcity-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/testflight-teamcity-common.iml" filepath="$PROJECT_DIR$/common/testflight-teamcity-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/testflight-teamcity-server.iml" filepath="$PROJECT_DIR$/server/testflight-teamcity-server.iml" />
